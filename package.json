@@ -29,7 +29,7 @@
     "source-loader": "^0.2.0",
     "spike-util": "^0.2.1",
     "sprout": "^1.2.0",
-    "webpack": "^1.13.0",
+    "webpack": "^2.1.0-beta.21",
     "when": "^3.7.7"
   },
   "devDependencies": {

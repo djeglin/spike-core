@@ -20,7 +20,7 @@ test('css works with postcss plugins', (t) => {
     .then((contents) => { return t.regex(contents, /color: rgb\(50, 50, 50\)/) })
 })
 
-test('css works with alternate parser', (t) => {
+test.only('css works with alternate parser', (t) => {
   return compileFixture(t, 'css_parser')
     .then(({publicPath}) => { return path.join(publicPath, 'main.css') })
     .tap((index) => { return fs.stat(index).tap(t.truthy.bind(t)) })
